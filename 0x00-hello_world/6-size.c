@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 /**
  * main - print out sizes of data types in c
  *
@@ -12,10 +13,10 @@ int main(void)
 	char d;
 	float f;
 
-	printf("size of char: %zu byte(S)\n", sizeof(a));
-	printf("size of int: %zu byte(S)\n", sizeof(b));
-	printf("size of long int: %zu byte(S)\n", sizeof(c));
-	printf("size of long long int: %zu byte(S)\n", sizeof(d));
-	printf("size of float: %zu byte(S)\n", sizeof(f));
+	printf("size of char: %d byte(S)\n", CHAR_BIT);
+	printf("size of int: %lu byte(S)\n", sizeof(b));
+	printf("size of long int: %lu byte(S)\n", sizeof(c));
+	printf("size of long long int: %lu byte(S)\n", sizeof(d));
+	printf("size of float: %lu byte(S)\n", sizeof(f));
 	return (0);
 }
