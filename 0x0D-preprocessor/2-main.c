@@ -8,7 +8,7 @@
 
 int ain(void)
 {
-	printf("%s\n", _file_);
+	printf("%s\n", __file__);
 
 	return (0);
 }
