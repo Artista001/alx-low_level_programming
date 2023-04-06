@@ -2,18 +2,18 @@
 
 /**
  * hash_table_create - A function that creates a hash table
- * @size: The size of our array
+ * @size: The size of the array
  *
- * Return: A pointer to the newly created hash table else return NULL
- *
+ * Return: If an error occurs - NULL
+ *         Otherwise - a pointer to the new hash table
  */
 
-hash_table_t *hash_table_create(unsigned long int size);
+hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *hash_table_create;
-	unsigned long int;
+	hash_table_t *hash_table_created;
+	unsigned long int i;
 
-	/** allocating space for the hash table */
+	/* allocate space for the hash table */
 	hash_table_created = malloc(sizeof(hash_table_t));
 
 	if (hash_table_created == NULL)
